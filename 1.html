@@ -8,6 +8,8 @@
   <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
   <!-- import aframe environment component -->
   <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+
 </head>
 
 <body>
@@ -35,8 +37,8 @@
     <a-sound src="#swell" autoplay="true" loop="true" volume="1" positional="false"></a-sound>
 
     
-    <a-gltf-model src="#mask" scale="0.1 0.1 0.1" position="0.81467 0.0022 -32.97637" gltf-model="models/bird/scene.gltf"></a-gltf-model>
-    <a-gltf-model src="#just_people" scale="0.003 0.003 0.003" position="-0.55062 0.14425 -4.68996" gltf-model="models/just_people/scene.gltf" visible="" mixin="teleport"></a-gltf-model>
+    <a-gltf-model src="#mask" scale="0.1 0.1 0.1" position="0.81467 0.0022 -32.97637" gltf-model="models/bird/scene.gltf" animation-mixer></a-gltf-model>
+    <a-gltf-model src="#just_people" scale="0.003 0.003 0.003" position="-0.55062 0.14425 -4.68996" gltf-model="models/just_people/scene.gltf" visible="" mixin="teleport" animation-mixer></a-gltf-model>
     <a-gltf-model src="#creature" scale="0.01 0.01 0.01" position="13.91311 0.5 -27.1167" animation-mixer="" gltf-model="models/fish_android_sea_surveillance__fishchallenge/scene.gltf">
     </a-gltf-model>
 
